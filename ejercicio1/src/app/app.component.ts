@@ -16,4 +16,11 @@ export class AppComponent {
     this.suma = String(sumar);
     this.promedio = String(sumar / 2);
   }
+
+  limpiarCuadros(){
+    this.edadUno = "";
+    this.edadDos = "";
+    this.suma = "";
+    this.promedio = "";
+  }
 }
