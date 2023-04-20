@@ -1,0 +1,30 @@
+
+<body>
+    <div class='brand'>
+        <a href='https://www.jamiecoulter.co.uk' target='_blank'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/logo.png'>
+        </a>
+    </div> 
+    <div class='login'>
+        <div class='login_title'>
+        <span>Registro</span>
+        </div>
+        <div class='login_fields'>
+            <div class='login_fields__user'>
+            <p>
+                <input [(ngModel)]="email" placeholder="Email" type="text"/>
+                <br><br>
+                <input [(ngModel)]="password" placeholder="Contraseña" type="password"/>
+                <br><br>
+                <input [(ngModel)]="passwordAgain" placeholder="Contraseña nuevamente" type="password"/>
+                <br><br>
+                <br><br>
+                <button (click)="registrarse()">Registrarse</button>
+                {{respuestaInput}}
+            </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
