@@ -1,0 +1,21 @@
+
+<app-tabla-pelicula (peliculaElegida)="recibiRespuesta($event)"></app-tabla-pelicula>
+
+<br>
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+            <app-detalle-pelicula [pelicula]="peli"></app-detalle-pelicula>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <div class="caption">
+        <app-detalle-pelicula [pelicula]="peli"></app-detalle-pelicula>
+        </div>
+    </div>
+    </div>
+  </div>

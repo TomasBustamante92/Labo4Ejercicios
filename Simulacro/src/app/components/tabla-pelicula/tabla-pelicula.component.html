@@ -1,0 +1,28 @@
+
+<div class="container">
+	<div class="table">
+		<div *ngIf="vistaTabla; else vistaLista">
+			
+			<div class="list-group bg-light">
+				<h1 class="text-center">Peliculas</h1>
+				<button type="button" class="list-group-item btn btn-primary" (click)="peliculaSeleccionada(peli)" 
+				*ngFor="let peli of peliculas">{{peli.nombre}}</button>
+			</div>
+
+		</div>
+		
+		<ng-template #vistaLista>
+			<div class="whiteLetter">
+			<ol>
+				<li *ngFor="let peli of peliculas; let i=index">
+					{{peli.nombre}}
+				</li>
+			</ol>
+		</div>
+		</ng-template>
+	</div>
+</div>
+
+<div style="text-align: center;">
+	<button class="btn btn-primary" (click)="cambiarVista()">Cambiar vista</button> 
+</div>
